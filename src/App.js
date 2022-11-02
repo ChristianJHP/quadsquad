@@ -17,19 +17,19 @@ const App = () => {
       <div style={{ width: '100%', float: 'left' }}>
         <h3>quadsquad.me</h3> <br />
       </div>
-      <Button variant="contained">Default Button</Button>
+      <Button variant="contained" color="primary">Connor</Button>
       <Button variant="contained" color="primary">
-        Primary Button
+        Christian
       </Button>
       <Button variant="contained" color="secondary">
-        Secondary Button
+        Summoner's Rift
       </Button>
-      <Button variant="contained" disabled>
-        Disabled Button
+      <Button variant="contained" color ="primary">
+        Darren
       </Button>
       <Button variant="contained" color="primary"
         href="#">
-        Link Button
+        Jack
       </Button>
     </div>
   );
