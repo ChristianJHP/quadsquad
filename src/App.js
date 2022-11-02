@@ -6,6 +6,9 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
   
 const App = () => {
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   
   return (
     <div style={{
@@ -17,17 +20,17 @@ const App = () => {
       <div style={{ width: '100%', float: 'left' }}>
         <h3>quadsquad.me</h3> <br />
       </div>
-      <Button variant="contained" color="primary">Connor</Button>
-      <Button variant="contained" color="primary">
+      <Button onClick={() => openInNewTab('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} variant="contained" color="primary">Connor</Button>
+      <Button onClick={() => openInNewTab('https://www.youtube.com/watch?v=KVAW9RUTfJM')} variant="contained" color="primary">
         Christian
       </Button>
-      <Button variant="contained" color="secondary">
+      <Button onClick={() => openInNewTab('https://trashloop.com/')} variant="contained" color="secondary">
         Summoner's Rift
       </Button>
-      <Button variant="contained" color ="primary">
+      <Button onClick={() => openInNewTab('http://endless.horse/')} variant="contained" color ="primary">
         Darren
       </Button>
-      <Button variant="contained" color="primary"
+      <Button onClick={() => openInNewTab('https://www.wikihow.com/Avoid-Becoming-a-Weeaboo')} variant="contained" color="primary"
         href="#">
         Jack
       </Button>
