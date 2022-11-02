@@ -27,7 +27,7 @@ const App = () => {
       />
       <label htmlFor="contained-button-file">
         <Button variant="contained" color="primary" component="span">
-          Upload
+          Upload A Picture
         </Button>
       </label>
       <h3>  OR  </h3>
