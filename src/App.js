@@ -1,14 +1,12 @@
 // install these dependencies
 // npm install @material-ui/core
 // npm install @material-ui/icons
-
+// npm install @material-ui/core
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import IconButton from '@material-ui/core/IconButton';
- 
+  
 const App = () => {
- 
+  
   return (
     <div style={{
       display: 'flex',
@@ -17,32 +15,24 @@ const App = () => {
       flexWrap: 'wrap',
     }}>
       <div style={{ width: '100%', float: 'left' }}>
-        <h3>How to use create button to choose file in ReactJS?</h3> <br />
+        <h3>quadsquad.me</h3> <br />
       </div>
-      <input
-        type="file"
-        accept="image/*"
-        style={{ display: 'none' }}
-        id="contained-button-file"
-      />
-      <label htmlFor="contained-button-file">
-        <Button variant="contained" color="primary" component="span">
-          Upload
-        </Button>
-      </label>
-      <h3>  OR  </h3>
-      <input accept="image/*" id="icon-button-file"
-        type="file" style={{ display: 'none' }} />
-      <label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture"
-        component="span">
-          <PhotoCamera />
-        </IconButton>
-      </label>
+      <Button variant="contained">Default Button</Button>
+      <Button variant="contained" color="primary">
+        Primary Button
+      </Button>
+      <Button variant="contained" color="secondary">
+        Secondary Button
+      </Button>
+      <Button variant="contained" disabled>
+        Disabled Button
+      </Button>
+      <Button variant="contained" color="primary"
+        href="#">
+        Link Button
+      </Button>
     </div>
   );
 }
- 
+  
 export default App;
-
-
