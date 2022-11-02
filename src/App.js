@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import IconButton from '@material-ui/core/IconButton';
+ 
+const App = () => {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      display: 'flex',
+      margin: 'auto',
+      width: 400,
+      flexWrap: 'wrap',
+    }}>
+      <div style={{ width: '100%', float: 'left' }}>
+        <h3>How to use create button to choose file in ReactJS?</h3> <br />
+      </div>
+      <input
+        type="file"
+        accept="image/*"
+        style={{ display: 'none' }}
+        id="contained-button-file"
+      />
+      <label htmlFor="contained-button-file">
+        <Button variant="contained" color="primary" component="span">
+          Upload
+        </Button>
+      </label>
+      <h3>  OR  </h3>
+      <input accept="image/*" id="icon-button-file"
+        type="file" style={{ display: 'none' }} />
+      <label htmlFor="icon-button-file">
+        <IconButton color="primary" aria-label="upload picture"
+        component="span">
+          <PhotoCamera />
+        </IconButton>
+      </label>
     </div>
   );
 }
-
+ 
 export default App;
