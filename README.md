@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+### 'npm install @material-ui/core'
+### 'npm install @material-ui/icons'
 ### `npm start`
 
 Runs the app in the development mode.\
