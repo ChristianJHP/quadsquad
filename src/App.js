@@ -1,3 +1,7 @@
+// install these dependencies
+// npm install @material-ui/core
+// npm install @material-ui/icons
+
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
@@ -40,3 +44,5 @@ const App = () => {
 }
  
 export default App;
+
+
