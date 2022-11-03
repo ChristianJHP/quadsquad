@@ -25,9 +25,9 @@ const App = () => {
         <Button style = {{margin: 'auto'}} onClick={() => openInNewTab('https://www.youtube.com/watch?v=KVAW9RUTfJM')} variant="contained" color="primary">
           Christian
         </Button>
-        {/*<Button style = {{margin: 'auto'}} onClick={() => openInNewTab('https://trashloop.com/')} variant="contained" color="secondary">*/}
-        {/*  Summoner's Rift*/}
-        {/*</Button>*/}
+        {/* <Button style = {{margin: 'auto'}} onClick={() => openInNewTab('https://trashloop.com/')} variant="contained" color="secondary">
+         Summoner's Rift
+        </Button> */}
         <Button style = {{margin: 'auto'}} onClick={() => openInNewTab('http://endless.horse/')} variant="contained" color ="primary">
           Darren
         </Button>
