@@ -1,48 +1,42 @@
 // install these dependencies
 // npm install @material-ui/core
 // npm install @material-ui/icons
-
+// npm install @material-ui/core
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import IconButton from '@material-ui/core/IconButton';
- 
+
 const App = () => {
- 
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <div style={{
-      display: 'flex',
-      margin: 'auto',
-      width: 400,
-      flexWrap: 'wrap',
-    }}>
-      <div style={{ width: '100%', float: 'left' }}>
-        <h3>How to use create button to choose file in ReactJS?</h3> <br />
-      </div>
-      <input
-        type="file"
-        accept="image/*"
-        style={{ display: 'none' }}
-        id="contained-button-file"
-      />
-      <label htmlFor="contained-button-file">
-        <Button variant="contained" color="primary" component="span">
-          Upload A Picture
+      <div style={{
+        display: 'flex',
+        margin: 'auto',
+        width: 400,
+        flexWrap: 'wrap',
+      }}>
+
+        <div style={{ width: '100%', float: 'left', margin: 'auto' }}>
+          <h3>quadsquad.me</h3> <br />
+        </div>
+        <Button style = {{margin: 'auto'}} onClick={() => openInNewTab('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} variant="contained" color="primary">Connor</Button>
+        <Button style = {{margin: 'auto'}} onClick={() => openInNewTab('https://www.youtube.com/watch?v=KVAW9RUTfJM')} variant="contained" color="primary">
+          Christian
         </Button>
-      </label>
-      <h3>  OR  </h3>
-      <input accept="image/*" id="icon-button-file"
-        type="file" style={{ display: 'none' }} />
-      <label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture"
-        component="span">
-          <PhotoCamera />
-        </IconButton>
-      </label>
-    </div>
+        {/*<Button style = {{margin: 'auto'}} onClick={() => openInNewTab('https://trashloop.com/')} variant="contained" color="secondary">*/}
+        {/*  Summoner's Rift*/}
+        {/*</Button>*/}
+        <Button style = {{margin: 'auto'}} onClick={() => openInNewTab('http://endless.horse/')} variant="contained" color ="primary">
+          Darren
+        </Button>
+        <Button style = {{margin: 'auto'}} onClick={() => openInNewTab('https://www.wikihow.com/Avoid-Becoming-a-Weeaboo')} variant="contained" color="primary"
+                href="#">
+          Jack
+        </Button>
+      </div>
   );
 }
- 
+
 export default App;
-
-
